@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AI Text Summarizer App</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-cont">
+      <div class="header-section animate__animated animate__bounceInDown">
+        <h1>
+          <span class="app-title">BrieflyAI:</span> An AI-Powered Text
+          Summarizer
+        </h1>
+        <div class="info-cont">
+          <p class="info-desc">
+            Powered by the facebook/bart-large-cnn model by Meta AI.
+            <a
+              href="https://huggingface.co/facebook/bart-large-cnn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span
+                class="material-symbols-outlined info-icon"
+                data-tooltip="Click to learn more about the model"
+              >
+                info
+              </span>
+            </a>
+          </p>
+        </div>
+        <div class="toggle-section">
+          <button id="theme-toggle" class="theme-toggle">
+            <span class="material-symbols-outlined"> dark_mode </span>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text-box animate__animated animate__backInLeft">
+          <div class="cont-title">
+            <h3 class="title">Text to summarize</h3>
+            <span
+              id="delete-btn"
+              class="material-symbols-outlined container-icon"
+              data-tooltip="Delete all text"
+            >
+              delete
+            </span>
+          </div>
+          <textarea
+            id="text_to_summarize"
+            name="text_to_summarize"
+            placeholder="Min length is 200 chars. Max length is 100,000 chars."
+            maxlength="100000"
+          ></textarea>
+          <button id="submit-button" class="submit-button">
+            <span class="submit-button-text">Summarize</span>
+          </button>
+          <div id="btns-holder" class="btn-holder">
+            <button onclick="pasteSampleText()" class="paste-btns">
+              <span class="material-symbols-outlined"> description </span>
+              Sample Text
+            </button>
+            <button id="pasteBtn" class="paste-btns">
+              <span class="material-symbols-outlined"> content_paste </span>
+              Paste Text
+            </button>
+          </div>
+        </div>
+        <div class="text-box animate__animated animate__backInRight">
+          <div class="cont-title">
+            <h3 class="title">Output</h3>
+            <span
+              id="copy-btn"
+              class="material-symbols-outlined container-icon"
+              data-tooltip="Copy all text"
+            >
+              content_copy
+            </span>
+          </div>
+          <textarea
+            id="summary"
+            name="summarized_text"
+            placeholder="Summarized text will appear here"
+          >
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
