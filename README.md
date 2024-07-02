@@ -12,7 +12,7 @@ BrieflyAI is an AI-powered text summarization application that efficiently trans
 
 ## Try BrieflyAI
 
-To try out BrieflyAI, [click here](http://localhost:3000/).
+To try out BrieflyAI, [click here](http://localhost:3000/){:target="_blank"}.
 
 ## Usage
 
