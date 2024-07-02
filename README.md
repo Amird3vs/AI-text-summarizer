@@ -5,9 +5,14 @@ BrieflyAI is an AI-powered text summarization application that efficiently trans
 ## Features
 
 - **Efficient Summarization**: Utilizes the facebook/bart-large-cnn model by Meta AI for accurate and informative summaries.
-- **User-Friendly Interface**: Clean and intuitive design for easy navigation and use.
-- **Responsive Design**: Works seamlessly across desktop and mobile devices.
 - **Theme Toggle**: Switch between light and dark themes for personalized viewing.
+- **Text Input Verification**: Ensures valid input length and enables or disables functionality based on input length.
+- **Clipboard Functionality**: Allows pasting from clipboard for convenience.
+- **Text Clearing with Confirmation**: Provides a confirmation dialog before clearing text areas.
+
+## Try BrieflyAI
+
+To try out BrieflyAI, [click here](#).
 
 ## Usage
 
@@ -24,12 +29,3 @@ To run BrieflyAI locally:
 3. Start the development server: `npm run dev`.
 
 Ensure you have Node.js and npm installed on your machine.
-
-## Model Details
-
-BrieflyAI utilizes the `facebook/bart-large-cnn` model by Meta AI, known for its effectiveness in generating coherent and accurate summaries from large texts.
-
-## Credits
-
-- **Meta AI**: For providing the `facebook/bart-large-cnn` model.
-- **OpenAI**: Inspiration and learning resources.
