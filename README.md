@@ -1,14 +1,13 @@
 # BrieflyAI: An AI-Powered Text Summarizer
 
-BrieflyAI is an AI-powered text summarization application built to condense lengthy documents into concise summaries using advanced natural language processing techniques.
+BrieflyAI is an AI-powered text summarization application that efficiently transforms lengthy texts into concise summaries using state-of-the-art natural language processing. Initially developed during my Project-Based Learning at Postman Academy, I've recently enhanced its design and added new features for improved functionality.
 
 ## Features
 
 - **Efficient Summarization**: Utilizes the facebook/bart-large-cnn model by Meta AI for accurate and informative summaries.
 - **User-Friendly Interface**: Clean and intuitive design for easy navigation and use.
-- **Customizable Summaries**: Adjust summarization length and parameters to suit specific needs.
-- **Tooltip Integration**: Provides contextual information about the summarization model used.
 - **Responsive Design**: Works seamlessly across desktop and mobile devices.
+- **Theme Toggle**: Switch between light and dark themes for personalized viewing.
 
 ## Usage
 
@@ -34,7 +33,3 @@ BrieflyAI utilizes the `facebook/bart-large-cnn` model by Meta AI, known for its
 
 - **Meta AI**: For providing the `facebook/bart-large-cnn` model.
 - **OpenAI**: Inspiration and learning resources.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
