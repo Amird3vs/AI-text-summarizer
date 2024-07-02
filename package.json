@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "BrieflyAI is an AI-powered text summarization application that efficiently transforms lengthy texts into concise summaries using state-of-the-art natural language processing. Initially developed during my Project-Based Learning at Postman Academy, I've recently enhanced its design and added new features for improved functionality.",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
